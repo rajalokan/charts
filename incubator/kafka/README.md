@@ -41,6 +41,12 @@ $ helm repo add incubator http://storage.googleapis.com/kubernetes-charts-incuba
 $ helm install --name my-kafka incubator/kafka
 ```
 
+If using helm3 then remove `--name` parameter as below
+```
+$ helm repo add incubator http://storage.googleapis.com/kubernetes-charts-incubator
+$ helm install my-kafka incubator/kafka
+```
+
 If using a dedicated namespace(recommended) then make sure the namespace
 exists with:
 
